@@ -253,10 +253,10 @@ def login():
     while 1:
         driver.get("https://course.fcu.edu.tw/")
         driver.find_element(By.XPATH, '//*[@id="ctl00_Login1_UserName"]').send_keys(
-            "D0123456"
+            "D013991"
         )
         driver.find_element(By.XPATH, '//*[@id="ctl00_Login1_Password"]').send_keys(
-            "abc123"
+            "lkjhg67448591"
         )
 
         img = getBase64Img('//*[@id="ctl00_Login1_Image1"]')
@@ -451,11 +451,11 @@ def main():
 if __name__ == "__main__":
     os.environ["WDM_LOG_LEVEL"] = "0"
     pytesseract.pytesseract.tesseract_cmd = (
-        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        r"C:\Users\gtho2\AppData\Local\Tesseract-OCR"
     )
     driver = None
     info = [
-        {"模式": "加選新", "舊課": "0", "新課": "0123", "狀態": "新的選不到"},
+        {"模式": "加選新", "舊課": "0", "新課": "2975", "狀態": "新的選不到"},
     ]
     clsNum = len(info)
     actionCount = None
